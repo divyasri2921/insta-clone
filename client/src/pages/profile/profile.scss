@@ -1,0 +1,181 @@
+@import '../../gobals';
+.profile{
+    width: 100%;
+    position: relative;
+    top: 60px;
+
+    .mainWrapper{
+        width: 100%;
+        height: calc(100vh - 60px);
+        background-color: $mainColor;
+        display: flex;
+        justify-content: center;
+        .profileWrapper{
+            width: 70%;
+            height: 100%;
+            margin-top: 30px;
+            position: relative;
+
+            .profileTop{
+                display: flex;
+
+                .pTLeft{
+                    margin-left: 50px;
+                    .ptImg{
+                        width: 170px;
+                        height: 170px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                }
+                .pTRight{
+                    margin-left: 100px;
+
+                    .pTRightTop{
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 27px;
+                        .profileName{
+                            margin-right: 20px;
+                            font-size: 28px;
+                            font-weight: 300;
+                            color: #616161;
+                        }
+                        .edit{
+                            background-color: white;
+                            padding: 5px;
+                            border: 1px solid lightgray;
+                            border-radius: 5px;
+                            font-size: 16px;
+                            cursor: pointer;
+                            margin-right: 10px;
+                        }
+                        .settingIcon{
+                            cursor: pointer;
+                        }
+                    }
+                    .pTRightCenter{
+                        display: flex;
+                        margin-bottom: 27px;
+                        .pTRightCenterItem{
+                            margin-right: 15px;
+                            &>span{
+                                margin-right: 3px;
+                                font-size: 16px;
+                            }
+                            .secondSpan{
+                                color: #616161;
+                            }
+                        }
+                    }
+                    .pTRightBottom{
+                        display: flex;
+                        flex-direction: column;
+                        .profileNameBottom{
+                            font-size: 16px;
+                            font-weight: 400;
+                            margin-bottom: 10px;
+                        }
+                        .profileBio{
+                            color: #504f4f;
+                        }
+                    }
+                    .profileButtons{
+                        margin-top: 64px;
+                        display: flex;
+                        .profileButton{
+                            width: 60px;
+                            height: 30px;
+                            padding: 15px;
+                            display: flex;
+                            align-items: center;
+                            margin-right: 30px;
+                            text-align: center;
+                            cursor: pointer;
+
+                            .profileButtonIcon{
+                                font-size: 12px;
+                                color: $textColor;
+                            }
+                            .profileButtonName{
+                                font-size: 12px;
+                                color: $textColor;
+                            }
+                        }
+                        .postsActive{
+                            border-top: 2px solid black;
+                        }
+                        .savedActive{
+                            border-top: 2px solid black;
+                        }
+                        .taggedActive{
+                            border-top: 2px solid black;
+
+                        }
+                    }
+                }
+            }
+            &::after{
+                content: "";
+                display: block;
+                width: 100%;
+                background-color: lightgray;
+                height: 1px;
+                position: absolute;
+                top: 220px;
+                right: 0;
+            }
+            .profileBottom{
+                .profileBottomContainer{
+                    .containerBody{
+                        width: 200px;
+                        height: 220px;
+                        padding: 15px;
+                        background-color: white;
+                        border: 1px solid lightgray;
+                        margin-top: 10px;
+                        border-radius: 6px;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+
+                        .cBIconContainer{
+                            width: 60px;
+                            height: 60px;
+                            border-radius: 50%;
+                            border: 1px solid lightgray;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-bottom: 10px;
+                        }
+                        .containerBodyIcon{
+                            font-size: 35px;
+                        }
+                        .containerSpan{
+                            margin-bottom: 10px;
+                        }
+                        .containerSpan1{
+                            font-size: 15px;
+                            color: $textColor;
+                            margin-bottom: 15px;
+                            text-align: center;
+                        }
+                        .containerBodyBtn{
+                            padding: 5px 7px;
+                            background-color: #0095F6;
+                            border: none;
+                            border-radius: 5px;
+                            font-size: 14px;
+                            font-weight: bold;
+                            color: white;
+                            cursor: pointer;
+                            margin-top: 15px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

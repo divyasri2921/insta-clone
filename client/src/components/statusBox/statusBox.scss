@@ -1,0 +1,53 @@
+@import '../../gobals';
+.statusBox{
+    width: 562px;
+    border: 1px solid lightgrey;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 13px 22px;
+    position: relative;
+    overflow: hidden;
+
+    .arrow{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: lightgray;  
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 99;
+    }
+    .leftArrowIcon{
+        left: 0;
+        margin-left: 7px;
+    }
+    .rightArrowIcon{
+        right: 0;
+        margin-right: 7px;
+    }
+    .statusBoxWrapper{
+        width: 100%;
+        display: flex;
+        transition: all 1s ease;
+    }
+    .statusImgContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+        margin: 0px 12px;
+        .statusImg{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .profileName{
+            font-size: 12px;
+            font-weight: 300;
+            color: $textColor;
+            margin-top: 10px;
+        }
+    }
+}

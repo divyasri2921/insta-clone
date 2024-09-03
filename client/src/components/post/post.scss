@@ -1,0 +1,135 @@
+@import '../../gobals'; 
+.post{
+    width: 96.5%;
+    background-color: white;
+    border: 1px solid lightgray;
+    margin-bottom: 20px;
+
+    .optionsContainer{
+        width: 400px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: white;
+        position: absolute;
+        border-radius: 10px;
+        right: 520px;
+        top: 150px;
+        cursor: pointer;
+        -webkit-box-shadow: 5px 5px 15px 4px rgba(211,211,211,0.87); 
+        box-shadow: 5px 5px 15px 4px rgba(211,211,211,0.87);
+
+        .option{
+            border-bottom: 1px solid lightgray;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+            color: $textColor;
+
+            .red{
+                color: red;
+            }
+            
+        }
+        .last{
+            border: none;
+        }
+    }
+    // .cancel{
+    //     opacity: 0;
+    // }
+    .postHeader{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 0.5px solid lightgray;
+
+        .postHeaderLeft{
+            display: flex;
+            align-items: center;
+            .profilePic{
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin-right: 20px;
+                cursor: pointer;
+            }
+            .postUsername{
+                font-size: 14px;
+                font-weight: 400;
+                cursor: pointer;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        .postHeaderRight{
+            cursor: pointer;
+        }
+    }
+    .postImage{
+        width: 100%;
+        height: 450px;
+        object-fit: cover;
+    }
+    .postFooter{
+
+        .postFooterTop{
+            display: flex;
+            align-content: center;
+            justify-content: space-between;
+            padding: 10px;
+            .pfooterTopLeft{
+                .pFIcon{
+                    height: 30px;
+                    width: 30px;
+                    font-size: 22px;
+                    cursor: pointer;
+                    margin-right: 3px;
+                }
+            }
+            .pfooterTopRight{
+                .pFIcon{
+                    height: 30px;
+                    width: 30px;
+                    font-size: 22px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .postInfo{
+            padding: 10px;
+        }
+        .comment{
+            padding: 10px;
+            border-top: 1px solid lightgray;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .cleft{
+                display: flex;
+                align-items: center;
+
+                .postComment{
+                    border: none;
+                    padding: 5px;
+                    margin-left: 5px;
+                    width: 500px;
+                }
+            }
+            .cRight{
+                .cBtn{
+                    color: $btntextColor;
+                    border: none;
+                    background-color: $mainColor;
+                    cursor: pointer;           
+                }
+            }
+        }
+    }
+}

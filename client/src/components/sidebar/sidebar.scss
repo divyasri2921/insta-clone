@@ -1,0 +1,96 @@
+@import '../../gobals.scss';
+
+.sidebar{
+    padding: 20px;
+    .sidebarTop{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 25px;
+
+        .sidebarTopLeft{
+            display: flex;
+            align-items: center;
+            .sidebarProfilePic{
+                height: 60px;
+                width: 60px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin-right: 12px;
+            }
+            .sidebarTopLeftUser{
+                display: flex;
+                flex-direction: column;
+                
+                .sidebarUsername{
+                    font-weight: 300;
+                    font-size: 13px;
+                    color: $textColor;
+               }
+            }
+        }
+        .sidebarTopRight{
+            .sidebarSwitchBtn{
+                color: $btntextColor;
+                border: none;
+                background-color: $mainColor;
+                cursor: pointer;
+            }
+        }
+    }
+    .sidebarBottom{
+        .tableHeadContainer{
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            .tableHead{
+                font-weight: 400;
+                font-size: 15px ;
+                color: $textColor;
+                column-width: 155px;
+                text-align: right;
+            }
+        }
+        .sidebarUsers{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            cursor: pointer;
+
+            .sidebarUsersLeft{
+                display: flex;
+                align-items: center;
+                .sidebarUsersImg{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    margin-right: 10px;
+                }
+                .sidebarUsersLeftSpans{
+                    display: flex;
+                    flex-direction: column;
+
+                    &>span{
+                        font-size: 13px;
+                        font-weight: 400;
+                        margin-bottom: 3px;
+                    }
+                    .span2{
+                        color: $textColor;
+                    }
+                    
+                }
+            }
+            .sidebarUsersRight{
+                .followBtn{
+                    color: $btntextColor;
+                    border: none;
+                    background-color: $mainColor;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

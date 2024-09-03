@@ -1,0 +1,114 @@
+@import '../../gobals';
+.postPage{
+    width: 100%;
+    height: 100%;
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .postPageClose{
+        position: absolute;
+        color: white;
+        font-size: 30px;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        font-weight: 200;
+    }
+    .postPageWrapper{
+        width: 35%;
+        height: 70%;
+        background-color: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+
+        .postPageTop{
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid lightgray;
+        }
+        .postPageBottom{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                margin-bottom: 18px;
+            }
+            span{
+                font-size: 20px;
+                color: $textColor;
+                margin-bottom: 20px;
+            }
+            .fileSelectBtn{
+                padding: 7px 5px;
+                width: 40%;
+                text-align: center;
+                background-color: #0095F6;
+                color: white;
+                border: none;
+                font-size: 14px;
+                border-radius: 5px;
+            }
+        }
+    }
+    .second{
+        .postPageTop{
+            display: flex;
+            align-content: center;
+            justify-content: space-between;
+
+            .postBtn{
+                color: #0095F6;
+                cursor: pointer;
+                background-color: white;
+                border: none;
+            }
+            .backIcon{
+                cursor: pointer;
+            }
+        }
+        .postPageBottom{
+            .toPostImage{
+                width: 100%;
+                height: 60%;
+                object-fit: contain;
+            }
+            .postComment{
+                border: none;
+                padding: 10px;
+                border-bottom: 1px solid lightgray;
+                width: 95%;
+                box-sizing: border-box;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .postSuccess{
+        background-color: white;
+        padding: 7px 10px;
+        color: #0095F6;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .postError{
+        background-color: white;
+        padding: 7px 10px;
+        color: red;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+.close{
+    opacity: 0;
+}
